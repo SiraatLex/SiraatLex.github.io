@@ -346,7 +346,7 @@ ul { list-style: none; }
 
 .what__image {
   width: 100%;
-  max-height: 340px;
+  max-height: 560px;
   object-fit: cover;
   box-shadow: var(--shadow);
 }
@@ -529,36 +529,63 @@ ul { list-style: none; }
 
 .sustain__methods li strong { color: #fff; }
 
-.sustain__qr-row {
-  display: flex;
-  gap: 1.5rem;
-  justify-content: center;
-}
-
-.sustain__qr-item {
+.sustain__donate-btns {
   display: flex;
   flex-direction: column;
+  gap: 0.85rem;
+  margin-top: 0.5rem;
+}
+
+.sustain__donate-btn {
+  display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  border-radius: var(--radius);
+  font-family: var(--font-body);
+  cursor: pointer;
+  transition: transform var(--transition), opacity var(--transition);
+  text-decoration: none;
 }
 
-.sustain__qr {
-  width: 120px;
-  height: 120px;
-  object-fit: contain;
-  background: #fff;
-  padding: 8px;
-  border-radius: 6px;
+.sustain__donate-btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.92;
 }
 
-.sustain__qr-label {
-  font-size: 0.85rem;
+.sustain__donate-btn--zelle {
+  background: #f3eeff;
+  border: 2px solid #6d1ed4;
+  color: #3b0a8c;
+}
+
+.sustain__donate-btn--donorbox {
+  background: #fff4ec;
+  border: 2px solid #f4923e;
+  color: #a04d0a;
+}
+
+.donate-icon {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+}
+
+.sustain__donate-btn--zelle .donate-icon { color: #6d1ed4; }
+.sustain__donate-btn--donorbox .donate-icon { color: #f4923e; }
+
+.donate-btn-label {
+  display: block;
   font-weight: 700;
-  letter-spacing: 0.04em;
+  font-size: 0.95rem;
 }
 
-.zelle-label { color: #6d1ed4; }
-.donorbox-label { color: #f4923e; }
+.donate-btn-sub {
+  display: block;
+  font-size: 0.8rem;
+  opacity: 0.75;
+  margin-top: 0.1rem;
+}
 
 /* ===========================
    CONTACT
@@ -615,7 +642,34 @@ ul { list-style: none; }
   font-weight: 700;
   color: var(--green-dark);
   letter-spacing: 0.1em;
+  margin-bottom: 1.5rem;
+}
+
+.whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: #25d366;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 0.85rem 1.75rem;
+  border-radius: 50px;
   margin-bottom: 2.5rem;
+  text-decoration: none;
+  box-shadow: 0 4px 16px rgba(37,211,102,0.3);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.whatsapp-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(37,211,102,0.4);
+}
+
+.whatsapp-icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
 }
 
 .contact__photos {
