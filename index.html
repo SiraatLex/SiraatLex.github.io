@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Siraat Lexington</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav">
+    <div class="nav__inner container">
+      <a href="#home" class="nav__logo">
+        <img src="images/logo.png" alt="Siraat Lexington" class="nav__logo-img" />
+        <span class="nav__logo-text">Siraat Lex</span>
+      </a>
+      <button class="nav__burger" aria-label="Toggle menu" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav__links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#vision">Vision</a>
+        <a href="#sisters">Sisters Suhbah</a>
+        <a href="#sustain">Donate</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero__overlay"></div>
+    <div class="hero__content container">
+      <p class="hero__eyebrow">Lexington, KY</p>
+      <h1 class="hero__title">Siraat<br/>Lexington</h1>
+      <p class="hero__tagline">Cultivating a sense of community and a love for Islam</p>
+      <div class="hero__cta-group">
+        <a href="#about" class="btn btn--primary">Learn More</a>
+        <a href="#sustain" class="btn btn--outline">Become a Sustainer</a>
+      </div>
+    </div>
+    <div class="hero__verse">
+      <p>"And hold firmly together to the rope of Allah and do not be divided."</p>
+      <span>— Quran 3:103</span>
+    </div>
+  </section>
+
+  <!-- WHAT WE DO -->
+  <section class="what section" id="about">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title">What We Do</h2>
+      </div>
+      <div class="what__grid">
+        <div class="what__card">
+          <h3 class="what__card-title">Our Main Drive</h3>
+          <p>Our main goal is to get the Muslims of Lexington to love Islam. Often times, our relationship with Islam is restricted by a lack of knowledge or a disconnect between those who study the deen for a living and those who are still learning.</p>
+          <p>Since its inception, Siraat Lexington has hosted over 10 distinct lecturers and speakers, many of whom have spent most of their lives studying Islam in a formal institution. Our members have the opportunity to learn from them and pick their brains on topics that they have never gotten the chance to ask before.</p>
+        </div>
+        <div class="what__card">
+          <h3 class="what__card-title">Uniting the Community Under One Umbrella</h3>
+          <p>Siraat Lexington is intentionally designed as a moving organization. Its purpose is to unite people that may be separated by the mosque of choice, age, or occupation.</p>
+        </div>
+        <div class="what__image-wrap">
+          <img src="images/community1.jpg" alt="Community gathering" class="what__image" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUR VISION -->
+  <section class="vision section section--green" id="vision">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title section__title--light">Our Vision</h2>
+      </div>
+      <div class="vision__grid">
+        <div class="vision__image-wrap">
+          <img src="images/speaker1.jpg" alt="Speaker at event" class="vision__image" />
+        </div>
+        <div class="vision__content">
+          <h3 class="vision__subtitle">Background</h3>
+          <p>The Muslim community of Lexington is rapidly growing. For the last ten years, we have seen increasing number of congregants for daily prayers, jummah, and taraweeh prayer. As we grow, the need for interconnectivity amongst Muslims in an Islamic setting is more needed than ever. How can a child, college, or working individual cultivate a relationship with the Mosque, while learning more about Islam?</p>
+          <p>Siraat Lexington attempts to answer this question by providing an environment filled with comrodory, food, and vibes. At the same time, providing an opportunity to hear from scholars and build real relationships as a teacher and student.</p>
+        </div>
+        <div class="vision__image-wrap vision__image-wrap--bottom">
+          <img src="images/speaker2.jpg" alt="Scholar and student" class="vision__image" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SISTERS SUHBAH -->
+  <section class="sisters section" id="sisters">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title">Sisters Suhbah</h2>
+        <p class="section__subtitle">About the Initiative</p>
+      </div>
+      <div class="sisters__grid">
+        <div class="sisters__content">
+          <p>Our newest initiative is Sisters Suhbah, a post graduate group that meets once per month. Often times, Muslims that graduate from university find themselves busy with further education, parenthood, employment, and more. This unfortunately results in isolation from peers and a disruptions in social life.</p>
+          <p>Sisters Suhbah attempts to subvert this phenomenon by providing a space where post-graduate sisters can convene and grow as Muslims. Examples of previous events hosted under this new initiative are:</p>
+          <ul class="sisters__list">
+            <li>Ramadan Qiyam</li>
+            <li>Dua reflections and Dhikr</li>
+            <li>Pickleball</li>
+            <li>Group watches of Islamic Lecture series'</li>
+          </ul>
+        </div>
+        <div class="sisters__image-wrap">
+          <img src="images/sisters1.jpg" alt="Sisters Suhbah gathering" class="sisters__image" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCHOLARS GALLERY -->
+  <section class="gallery section section--light">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title">Our Community</h2>
+      </div>
+      <div class="gallery__grid">
+        <img src="images/scholar1.jpg" alt="Scholar" class="gallery__img" />
+        <img src="images/scholar2.jpg" alt="Scholar" class="gallery__img" />
+        <img src="images/scholar3.jpg" alt="Scholar" class="gallery__img" />
+        <img src="images/scholar4.jpg" alt="Scholar" class="gallery__img" />
+      </div>
+    </div>
+  </section>
+
+  <!-- BECOME A SUSTAINER -->
+  <section class="sustain section section--green" id="sustain">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title section__title--light">Become a Sustainer</h2>
+      </div>
+      <div class="sustain__grid">
+        <div class="sustain__content">
+          <p>Siraat Lexington relies 100% on the generosity of its sustainers to operate and host events for the community. Contributions allow us to bring in classically trained scholars and speakers from all over the United States. They enable us to provide food and cultivate a welcoming environment for community members of all ages and gender.</p>
+          <p>Consider becoming a sustainer and help us serve the community of Lexington.</p>
+
+          <div class="sustain__legal">
+            <h4>More About Siraat</h4>
+            <p><strong>Siraat Lexington Inc</strong> is a 501(c)(3) federal tax exempt non-profit organization. All contributions <strong>strictly</strong> go towards events and improvements for the organization. There are no individual benefactors or employees at Siraat.</p>
+          </div>
+        </div>
+
+        <div class="sustain__ways">
+          <h3 class="sustain__ways-title">Ways to Donate</h3>
+          <ul class="sustain__methods">
+            <li>Cheque payable to: <strong>Siraat Lex Inc.</strong></li>
+            <li>Zelle</li>
+            <li>DonorBox</li>
+          </ul>
+          <div class="sustain__qr-row">
+            <div class="sustain__qr-item">
+              <img src="images/qr-zelle.png" alt="Zelle QR Code" class="sustain__qr" />
+              <span class="sustain__qr-label zelle-label">Zelle</span>
+            </div>
+            <div class="sustain__qr-item">
+              <img src="images/qr-donorbox.png" alt="DonorBox QR Code" class="sustain__qr" />
+              <span class="sustain__qr-label donorbox-label">DonorBox</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JOIN / CONTACT -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title">Join Our Community</h2>
+        <p class="section__subtitle">Have Questions?</p>
+      </div>
+      <div class="contact__body">
+        <p>This organization is <strong>FOR</strong> the community, <strong>LEAD</strong> by community members. If you have any suggestions or improvements, email us at <a href="mailto:Siraat.Lexington@gmail.com" class="contact__email">Siraat.Lexington@gmail.com</a> or message us on our social media accounts.</p>
+        <div class="contact__socials">
+          <a href="https://instagram.com/siraatlex" target="_blank" rel="noopener" aria-label="Instagram" class="social-link social-link--instagram">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="https://facebook.com/siraatlex" target="_blank" rel="noopener" aria-label="Facebook" class="social-link social-link--facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="https://tiktok.com/@siraatlex" target="_blank" rel="noopener" aria-label="TikTok" class="social-link social-link--tiktok">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.17 8.17 0 0 0 4.78 1.52V6.76a4.85 4.85 0 0 1-1.01-.07z"/></svg>
+          </a>
+        </div>
+        <p class="contact__handle">@SIRAATLEX</p>
+        <div class="contact__photos">
+          <img src="images/community2.jpg" alt="Community volunteers" class="contact__photo" />
+          <img src="images/community3.jpg" alt="Community sisters" class="contact__photo" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="images/logo.png" alt="Siraat Lexington" class="footer__logo" />
+        <p class="footer__name">Siraat Lexington</p>
+      </div>
+      <p class="footer__tagline">Cultivating a sense of community and a love for Islam</p>
+      <p class="footer__legal">Siraat Lexington Inc. is a 501(c)(3) non-profit organization.</p>
+      <p class="footer__email"><a href="mailto:Siraat.Lexington@gmail.com">Siraat.Lexington@gmail.com</a></p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('navLinks').classList.toggle('nav__links--open');
+    }
+
+    // Close menu on link click
+    document.querySelectorAll('.nav__links a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.getElementById('navLinks').classList.remove('nav__links--open');
+      });
+    });
+
+    // Smooth reveal on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) e.target.classList.add('visible');
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.section').forEach(s => observer.observe(s));
+  </script>
+</body>
+</html>
